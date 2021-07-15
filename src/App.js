@@ -9,13 +9,13 @@ function App() {
   useEffect(() => {
     axios.get('https://api.nasa.gov/planetary/apod?api_key=SKSXmRlaTuHqV8cdxZlESwq5S8ayxdK1CyXHIPdt')
     .then(res => {
-      console.log(res.data)
+      // console.log(res.data)
       setData(res.data)
     })
     .catch(err => console.log(err))
     .finally(() => console.log('done'))
   }, [])
-
+  console.log(data)
   return (
     <div className="App">
       <div className="post-container">
