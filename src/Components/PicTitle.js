@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 
-function VideoTitle(props) {
-    const { videoTitle } = props
+function PicTitle(props) {
+    const { picTitle } = props
 
-    return (<h2>{videoTitle}</h2>)
+    return (<h2>{picTitle}</h2>)
 }
 
-export default VideoTitle
+export default PicTitle
