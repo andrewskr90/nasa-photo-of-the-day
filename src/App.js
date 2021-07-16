@@ -3,7 +3,7 @@ import axios from 'axios'
 import "./App.css";
 import Post from './Components/Post'
 
-function App() {
+export default function App() {
   const [data, setData] = useState([])
 
   useEffect(() => {
@@ -15,21 +15,12 @@ function App() {
     .catch(err => console.log(err))
     .finally(() => console.log('done'))
   }, [])
-  console.log(data)
+  
   return (
     <div className="App">
       <div className="post-container">
         <Post data={data} />
-          
       </div>
-      
-
-      <p>
-        Read through the instructions in the README.md file to build your NASA
-        app! Have fun <span role="img" aria-label='go!'>🚀</span>!
-      </p>
     </div>
   );
 }
-
-export default App;
